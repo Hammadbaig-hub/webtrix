@@ -16,8 +16,13 @@
 
   /* ---------- Header / Nav Scroll State ---------- */
   const nav = $('#nav');
+  const progressBar = $('#scrollProgress');
   const onScroll = () => {
     if (nav) nav.classList.toggle('scrolled', window.scrollY > 20);
+    if (progressBar) {
+      const max = document.documentElement.scrollHeight - window.innerHeight;
+      progressBar.style.transform = `scaleX(${max > 0 ? Math.min(window.scrollY / max, 1) : 0})`;
+    }
   };
   onScroll();
   window.addEventListener('scroll', onScroll, { passive: true });
@@ -375,7 +380,7 @@
     }
 
     // Spotlight glow on cards
-    $$('.why-card, .about-card, .pf-card, .svc-card').forEach((card) => {
+    $$('.why-card, .about-card, .pf-card, .svc-card, .hs-card').forEach((card) => {
       card.addEventListener('mousemove', (e) => {
         const r = card.getBoundingClientRect();
         card.style.setProperty('--mx', `${e.clientX - r.left}px`);
@@ -399,6 +404,14 @@
   let currentLbIndex = 0;
   const getVisibleCards = () => pfCards.filter(c => c.getAttribute('data-hidden') !== 'true');
 
+  // With an odd number of regular cards showing, let the last one fill its row
+  const balanceGrid = () => {
+    const regular = getVisibleCards().filter((c) => !c.classList.contains('pf-featured'));
+    pfCards.forEach((c) => c.classList.remove('pf-span'));
+    if (regular.length % 2 === 1) regular[regular.length - 1].classList.add('pf-span');
+  };
+  balanceGrid();
+
   pfFilters.forEach((btn) => {
     btn.addEventListener('click', () => {
       pfFilters.forEach(b => {
@@ -417,6 +430,7 @@
           card.setAttribute('data-hidden', 'true');
         }
       });
+      balanceGrid();
     });
   });
 

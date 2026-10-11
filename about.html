@@ -20,7 +20,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet" />
 
-  <link rel="stylesheet" href="css/style.css?v=9.0" />
+  <link rel="stylesheet" href="css/style.css?v=10.0" />
 
 </head>
 <body>
@@ -56,6 +56,7 @@
 
   <div class="noise" aria-hidden="true"></div>
   <div class="cursor-glow" aria-hidden="true"></div>
+  <div class="scroll-progress" aria-hidden="true"><span id="scrollProgress"></span></div>
 
   <!-- ================= NAVIGATION ================= -->
   <header class="nav" id="nav">
@@ -107,6 +108,7 @@
       <div class="container">
         <div class="section-head split">
           <div>
+            <nav class="crumbs reveal" aria-label="Breadcrumb"><a href="index.html">Home</a><svg class="i" aria-hidden="true"><use href="#i-arrow" /></svg><span aria-current="page">About</span></nav>
             <span class="kicker reveal">About Webtrix</span>
             <h1 class="section-title reveal" data-delay="1">Architects of your <span class="text-gradient">digital presence.</span></h1>
           </div>
@@ -173,6 +175,41 @@
               <p>Seamless communication, proactive project management, and rapid iterations for clients across all time zones.</p>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= STUDIO IN NUMBERS ================= -->
+    <section class="about-numbers" aria-label="Webtrix in numbers">
+      <div class="container">
+        <div class="stats reveal">
+          <div class="stat">
+            <div class="stat-num"><span class="count" data-to="7">0</span></div>
+            <div class="stat-label">Core engineering disciplines</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num"><span class="count" data-to="95">0</span>+</div>
+            <div class="stat-label">Average PageSpeed score</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num"><span class="count" data-to="100">0</span>%</div>
+            <div class="stat-label">Full IP &amp; Code Ownership</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num"><svg class="i stat-icon"><use href="#i-globe" /></svg></div>
+            <div class="stat-label">Global delivery for modern leaders</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= TECH MARQUEE ================= -->
+    <section class="marquee-section" aria-label="Technologies we use">
+      <p class="marquee-title">Enterprise Technologies We Build With</p>
+      <div class="marquee">
+        <div class="marquee-track">
+          <span>React.js</span><span>Next.js 15</span><span>Node.js</span><span>Python</span><span>PostgreSQL</span><span>Supabase</span><span>Shopify Plus</span><span>Liquid</span><span>WordPress</span><span>WooCommerce</span><span>OpenAI API</span><span>Claude 3.5</span><span>REST APIs</span><span>Technical SEO</span>
+          <span aria-hidden="true">React.js</span><span aria-hidden="true">Next.js 15</span><span aria-hidden="true">Node.js</span><span aria-hidden="true">Python</span><span aria-hidden="true">PostgreSQL</span><span aria-hidden="true">Supabase</span><span aria-hidden="true">Shopify Plus</span><span aria-hidden="true">Liquid</span><span aria-hidden="true">WordPress</span><span aria-hidden="true">WooCommerce</span><span aria-hidden="true">OpenAI API</span><span aria-hidden="true">Claude 3.5</span><span aria-hidden="true">REST APIs</span><span aria-hidden="true">Technical SEO</span>
         </div>
       </div>
     </section>
@@ -347,6 +384,6 @@
     </div>
   </div>
 
-  <script src="js/main.js?v=9.0"></script>
+  <script src="js/main.js?v=10.0"></script>
 </body>
 </html>

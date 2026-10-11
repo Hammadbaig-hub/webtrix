@@ -20,7 +20,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet" />
 
-  <link rel="stylesheet" href="css/style.css?v=9.0" />
+  <link rel="stylesheet" href="css/style.css?v=10.0" />
 
   <script type="application/ld+json">
   {
@@ -68,6 +68,7 @@
 
   <div class="noise" aria-hidden="true"></div>
   <div class="cursor-glow" aria-hidden="true"></div>
+  <div class="scroll-progress" aria-hidden="true"><span id="scrollProgress"></span></div>
 
   <!-- ================= NAVIGATION ================= -->
   <header class="nav" id="nav">
@@ -310,6 +311,121 @@
         <div class="marquee-track">
           <span>React.js</span><span>Next.js 15</span><span>Node.js</span><span>Python</span><span>PostgreSQL</span><span>Supabase</span><span>Shopify Plus</span><span>Liquid</span><span>WordPress</span><span>WooCommerce</span><span>OpenAI API</span><span>Claude 3.5</span><span>REST APIs</span><span>Technical SEO</span>
           <span aria-hidden="true">React.js</span><span aria-hidden="true">Next.js 15</span><span aria-hidden="true">Node.js</span><span aria-hidden="true">Python</span><span aria-hidden="true">PostgreSQL</span><span aria-hidden="true">Supabase</span><span aria-hidden="true">Shopify Plus</span><span aria-hidden="true">Liquid</span><span aria-hidden="true">WordPress</span><span aria-hidden="true">WooCommerce</span><span aria-hidden="true">OpenAI API</span><span aria-hidden="true">Claude 3.5</span><span aria-hidden="true">REST APIs</span><span aria-hidden="true">Technical SEO</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SERVICES OVERVIEW ================= -->
+    <section class="section home-services" id="services-overview">
+      <div class="container">
+        <div class="section-head split">
+          <div>
+            <span class="kicker reveal">What We Do</span>
+            <h2 class="section-title reveal" data-delay="1">One team for everything your business <span class="text-gradient">runs on.</span></h2>
+          </div>
+          <p class="section-lead reveal" data-delay="2">Seven core services under one roof. Start with what you need today and add more as you grow, without switching agencies.</p>
+        </div>
+
+        <div class="hs-grid">
+          <a href="services.html#svc-web" class="hs-card reveal">
+            <span class="hs-num">01</span>
+            <div class="hs-icon"><svg class="i"><use href="#i-web" /></svg></div>
+            <h3>Websites &amp; Web Apps</h3>
+            <p>Fast, modern sites and web apps designed to turn visitors into clients.</p>
+            <span class="hs-link">Learn more <svg class="i"><use href="#i-arrow-ur" /></svg></span>
+          </a>
+          <a href="services.html#svc-software" class="hs-card reveal" data-delay="1">
+            <span class="hs-num">02</span>
+            <div class="hs-icon"><svg class="i"><use href="#i-code" /></svg></div>
+            <h3>Custom Software</h3>
+            <p>Dashboards, portals and backends shaped around your real workflow.</p>
+            <span class="hs-link">Learn more <svg class="i"><use href="#i-arrow-ur" /></svg></span>
+          </a>
+          <a href="services.html#svc-shopify" class="hs-card reveal" data-delay="2">
+            <span class="hs-num">03</span>
+            <div class="hs-icon"><svg class="i"><use href="#i-bag" /></svg></div>
+            <h3>Shopify Stores</h3>
+            <p>On-brand stores with custom themes, ready to take orders from day one.</p>
+            <span class="hs-link">Learn more <svg class="i"><use href="#i-arrow-ur" /></svg></span>
+          </a>
+          <a href="services.html#svc-wordpress" class="hs-card reveal" data-delay="3">
+            <span class="hs-num">04</span>
+            <div class="hs-icon"><svg class="i"><use href="#i-layout" /></svg></div>
+            <h3>WordPress &amp; WooCommerce</h3>
+            <p>Custom sites and shops your team can update without touching code.</p>
+            <span class="hs-link">Learn more <svg class="i"><use href="#i-arrow-ur" /></svg></span>
+          </a>
+          <a href="services.html#svc-ai" class="hs-card reveal">
+            <span class="hs-num">05</span>
+            <div class="hs-icon"><svg class="i"><use href="#i-ai" /></svg></div>
+            <h3>AI Integration</h3>
+            <p>Assistants and smart features powered by OpenAI and Claude.</p>
+            <span class="hs-link">Learn more <svg class="i"><use href="#i-arrow-ur" /></svg></span>
+          </a>
+          <a href="services.html#svc-automation" class="hs-card reveal" data-delay="1">
+            <span class="hs-num">06</span>
+            <div class="hs-icon"><svg class="i"><use href="#i-zap" /></svg></div>
+            <h3>Automation</h3>
+            <p>Orders, alerts, inventory and reports that run on their own.</p>
+            <span class="hs-link">Learn more <svg class="i"><use href="#i-arrow-ur" /></svg></span>
+          </a>
+          <a href="services.html#svc-seo" class="hs-card reveal" data-delay="2">
+            <span class="hs-num">07</span>
+            <div class="hs-icon"><svg class="i"><use href="#i-gauge" /></svg></div>
+            <h3>SEO &amp; Speed</h3>
+            <p>Faster load times and the SEO foundations that help you get found.</p>
+            <span class="hs-link">Learn more <svg class="i"><use href="#i-arrow-ur" /></svg></span>
+          </a>
+          <a href="contact.html" class="hs-card hs-cta reveal" data-delay="3">
+            <div class="hs-icon"><svg class="i"><use href="#i-chat" /></svg></div>
+            <h3>Not sure what you need?</h3>
+            <p>Tell us the problem. We'll recommend the right solution, free.</p>
+            <span class="hs-link">Start your brief <svg class="i"><use href="#i-arrow" /></svg></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FEATURED WORK ================= -->
+    <section class="section home-work" id="featured-work">
+      <div class="container">
+        <div class="section-head split">
+          <div>
+            <span class="kicker reveal">Selected Work</span>
+            <h2 class="section-title reveal" data-delay="1">Recent projects, <span class="text-gradient">up close.</span></h2>
+          </div>
+          <div class="hw-lead reveal" data-delay="2">
+            <p class="section-lead">A look at the websites, software and stores we design and build, from corporate platforms to analytics dashboards.</p>
+            <a href="portfolio.html" class="btn btn-ghost magnetic">View full portfolio <svg class="i"><use href="#i-arrow" /></svg></a>
+          </div>
+        </div>
+
+        <div class="hw-grid">
+          <a href="portfolio.html" class="hw-card hw-large reveal">
+            <img src="assets/portfolio/corporate-website.jpg" alt="Dark premium corporate consulting website homepage" loading="lazy" />
+            <div class="hw-info">
+              <span class="hw-cat">Websites &amp; Web Apps</span>
+              <h3>Corporate Consulting Platform</h3>
+              <span class="hw-chips"><span>Next.js</span><span>React.js</span><span>Node.js</span></span>
+            </div>
+            <span class="hw-arrow"><svg class="i"><use href="#i-arrow-ur" /></svg></span>
+          </a>
+          <a href="portfolio.html" class="hw-card reveal" data-delay="1">
+            <img src="assets/portfolio/saas-dashboard.jpg" alt="Sales analytics admin dashboard with KPI cards and charts" loading="lazy" />
+            <div class="hw-info">
+              <span class="hw-cat">Custom Software</span>
+              <h3>Sales Analytics Dashboard</h3>
+            </div>
+            <span class="hw-arrow"><svg class="i"><use href="#i-arrow-ur" /></svg></span>
+          </a>
+          <a href="portfolio.html" class="hw-card reveal" data-delay="2">
+            <img src="assets/portfolio/fashion-store.jpg" alt="Elegant fashion e-commerce store homepage" loading="lazy" />
+            <div class="hw-info">
+              <span class="hw-cat">Shopify Store</span>
+              <h3>Luxury Fashion Storefront</h3>
+            </div>
+            <span class="hw-arrow"><svg class="i"><use href="#i-arrow-ur" /></svg></span>
+          </a>
         </div>
       </div>
     </section>
@@ -563,6 +679,6 @@
     </div>
   </div>
 
-  <script src="js/main.js?v=9.0"></script>
+  <script src="js/main.js?v=10.0"></script>
 </body>
 </html>

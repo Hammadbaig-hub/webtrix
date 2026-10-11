@@ -20,7 +20,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet" />
 
-  <link rel="stylesheet" href="css/style.css?v=9.0" />
+  <link rel="stylesheet" href="css/style.css?v=10.0" />
 
 </head>
 <body>
@@ -56,6 +56,7 @@
 
   <div class="noise" aria-hidden="true"></div>
   <div class="cursor-glow" aria-hidden="true"></div>
+  <div class="scroll-progress" aria-hidden="true"><span id="scrollProgress"></span></div>
 
   <!-- ================= NAVIGATION ================= -->
   <header class="nav" id="nav">
@@ -106,6 +107,7 @@
       </div>
       <div class="container contact-inner">
         <div class="contact-info">
+          <nav class="crumbs reveal" aria-label="Breadcrumb"><a href="index.html">Home</a><svg class="i" aria-hidden="true"><use href="#i-arrow" /></svg><span aria-current="page">Contact</span></nav>
           <span class="kicker reveal">Start a Project</span>
           <h1 class="section-title reveal" data-delay="1">Let's build what <span class="text-gradient">runs</span> your business.</h1>
           <p class="section-lead reveal" data-delay="2">Tell us about your project in three quick steps. It takes about two minutes, and you'll hear back from a senior engineer within one business day.</p>
@@ -199,11 +201,12 @@
                 <label for="budget">Estimated budget (USD)</label>
                 <select id="budget" name="budget">
                   <option value="">Select a range</option>
-                  <option>Under $1,000</option>
-                  <option>$1,000 – $3,000</option>
-                  <option>$3,000 – $7,500</option>
-                  <option>$7,500 – $15,000</option>
-                  <option>$15,000+</option>
+                  <option>Under $300</option>
+                  <option>$300 – $700</option>
+                  <option>$700 – $1,500</option>
+                  <option>$1,500 – $3,000</option>
+                  <option>$3,000 – $6,000</option>
+                  <option>$6,000+</option>
                   <option>Not sure yet</option>
                 </select>
               </div>
@@ -457,6 +460,6 @@
     </div>
   </div>
 
-  <script src="js/main.js?v=9.0"></script>
+  <script src="js/main.js?v=10.0"></script>
 </body>
 </html>

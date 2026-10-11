@@ -20,7 +20,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet" />
 
-  <link rel="stylesheet" href="css/style.css?v=9.0" />
+  <link rel="stylesheet" href="css/style.css?v=10.0" />
 
 </head>
 <body>
@@ -56,6 +56,7 @@
 
   <div class="noise" aria-hidden="true"></div>
   <div class="cursor-glow" aria-hidden="true"></div>
+  <div class="scroll-progress" aria-hidden="true"><span id="scrollProgress"></span></div>
 
   <!-- ================= NAVIGATION ================= -->
   <header class="nav" id="nav">
@@ -107,6 +108,7 @@
       <div class="container">
         <div class="section-head split">
           <div>
+            <nav class="crumbs reveal" aria-label="Breadcrumb"><a href="index.html">Home</a><svg class="i" aria-hidden="true"><use href="#i-arrow" /></svg><span aria-current="page">Portfolio</span></nav>
             <span class="kicker reveal">Portfolio</span>
             <h1 class="section-title reveal" data-delay="1">Work that <span class="text-gradient">speaks</span> for itself.</h1>
           </div>
@@ -287,10 +289,6 @@
           </article>
         </div>
 
-        <div class="pf-cta reveal">
-          <p>Ready to engineer a digital platform that commands authority?</p>
-          <a href="contact.html" class="btn btn-primary btn-lg magnetic">Start Your Project <svg class="i"><use href="#i-arrow" /></svg></a>
-        </div>
       </div>
     </section>
 
@@ -310,6 +308,21 @@
       </figure>
       <button class="lb-nav lb-next" aria-label="Next project"><svg class="i"><use href="#i-arrow" /></svg></button>
     </div>
+    <!-- ================= CTA BAND ================= -->
+    <section class="cta-band">
+      <div class="container">
+        <div class="cta-box reveal">
+          <div class="cta-glow" aria-hidden="true"></div>
+          <svg class="cta-logo" aria-hidden="true"><use href="#logo" /></svg>
+          <h2>Have a project in mind?<br /><span class="text-gradient">Let's build it together.</span></h2>
+          <p>Tell us what you need. We'll review your goals and provide a clear technical roadmap — no obligation.</p>
+          <div class="cta-actions">
+            <a href="contact.html" class="btn btn-primary btn-lg magnetic">Get a Free Consultation <svg class="i"><use href="#i-arrow" /></svg></a>
+            <a href="mailto:webtrixdevofficial@gmail.com" class="btn btn-ghost btn-lg"><svg class="i"><use href="#i-mail" /></svg> webtrixdevofficial@gmail.com</a>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
   <a href="contact.html" class="btn btn-primary btn-lg mobile-cta">Start Your Project <svg class="i"><use href="#i-arrow" /></svg></a>
@@ -421,6 +434,6 @@
     </div>
   </div>
 
-  <script src="js/main.js?v=9.0"></script>
+  <script src="js/main.js?v=10.0"></script>
 </body>
 </html>
